@@ -8,7 +8,7 @@ from scipy.stats import gaussian_kde
 ra, dec = randomsdss.sky_random(dr="DR16", catalog="SDSS", size=500000)
 
 def randz(z, randcatsize):
-    #Method to calculate random redshift values from input redshift distribution
+   
 
     pdf = gaussian_kde(z)
     z_rand = pdf.resample(size= randcatsize)
